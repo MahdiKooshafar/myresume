@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mysite</title>
+    <link rel="stylesheet" href="assets/css/styleDark.css">
+
+</head>
+
+<body>
+    <div class="backsite">
+        <div class="firstopenner">
+            <button class="resume" onclick="resume()" type="button">Resume</button>
+            <button class="worktable" type="button" onclick="worktable()">
+                Simple Works
+            </button>
+            <button class="github" type="button" onclick="github()">
+                Git Hub
+            </button>
+            <button class="backto" type="button" onclick="backtoleft()">
+                Menu
+            </button>
+            <button class="backtor" type="button" onclick="backtoright()">
+                Menu
+            </button>
+        </div>
+        <!-- resume part -->
+        <div>
+
+        </div>
+        <!-- worktable part -->
+        <div class="backworks">
+            <div class="carusel-buttons"> 
+                <button class="carts" type="button">
+                    <!-- <img src="assets/images/blizzard.png" class="mainimg"> -->
+                    <span>Blizzard Project</span>
+                </button>
+                <button class="carts" type="button">
+                    <!-- <img src="assets/images/samsung.png" class="mainimg"> -->
+                    <span>samsung Project</span>
+                </button>
+            </div>
+            <div class="workcarusel">
+                <div class="innerworkcarusel">
+                    <div class="works">
+                        <a href="" class="worksbox">
+                            <img src="assets/images/blizzard.png">
+                            <h2>Blizzard Project</h2>
+                            <span>first Work</span>
+                            <span>Css & Html</span>
+                            <div class="works-type">
+                                <img src="assets/images/Other-html-5-icon.png" >
+                                <img src="assets/images/CSS3_logo.png" >
+                                <img src="assets/images/bootstrap.png" >
+                            </div>
+                        </a>
+                    </div>
+                    <div class="works">
+                        <a href="" class="worksbox">
+                            <img src="assets/images/samsung.png">
+                            <h2>Blizzard Project</h2>
+                            <span>first Work</span>
+                            <span>Css & Html</span>
+                            <div class="works-type">
+                                <img src="assets/images/Other-html-5-icon.png" >
+                                <img src="assets/images/CSS3_logo.png" >
+                                <img src="assets/images/javascript-logo.png" >
+                                <img src="assets/images/jquery-logo.png" >
+                                <img src="assets/images/bootstrap.png" >
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <ol class="indicators-work">
+                    <li>
+                        <span class="circelindicators"></span>
+                        <span class="title">Blizzard</span>
+                    </li>
+                    <li>
+                        <span class="circelindicators"></span>
+                        <span class="title">Samsung</span>
+                    </li>
+                </ol>
+                <button type="button" class="next" onclick="nextcarwork()">Next</button>
+                <button type="button" class="previous" onclick="previouscarwork()">Previous</button>
+                <button type="button" class="back-to-works" onclick="backworktable()">Back</button>
+            </div>
+        </div>
+        <!-- github part -->
+        <div>
+
+        </div>
+    </div>
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>

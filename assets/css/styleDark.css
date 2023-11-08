@@ -1,0 +1,339 @@
+body {
+    margin: 0;
+}
+
+.backsite {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    position: relative;
+    justify-content: center;
+    background-color: black;
+
+}
+
+.firstopenner {
+    /* top: calc(50% - 10vw);
+    width: 20vw;
+    height: 20vw; */
+    box-shadow: inset 0 0 4vw #254B62, 0 0 1vw #1D3E53;
+    transition: all 1s;
+    position: fixed;
+    /* left: calc(50% - 10vw); */
+    animation-name: changer;
+    animation-duration: 0.5s;
+    /* min-width: fit-content;
+    min-height: fit-content; */
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2%;
+    gap: 1vw;
+    transform: scale(1);
+    z-index: +100;
+}
+
+@keyframes changer {
+    0% {
+        transform: scale(0);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes changer1 {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        transform: scale(0);
+        opacity: 0;
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.firstopenner button {
+    color: #ffffff8a;
+    display: flex;
+    justify-content: center;
+    width: max-content;
+    height: auto;
+    background-color: #476d7c4d;
+    outline: none;
+    border: none;
+    box-shadow: 0 0 1vw #254B62;
+    font-size: 2rem;
+    border-radius: 30px;
+    padding: 1% 5%;
+    transition: all 0.5s;
+    animation-name: changer;
+    animation-duration: 0.5s;
+}
+
+.firstopenner button:hover {
+    background-color: #77abb780;
+    box-shadow: 0 0 1vw #77ABB7;
+    text-shadow: 0px 0px 1vw whitesmoke;
+}
+
+.backto,
+.backtor {
+    display: none !important;
+    box-shadow: none !important;
+    background-color: transparent !important;
+}
+
+.backworks {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    animation-name: changer;
+    animation-duration: 0.5s;
+    border-radius: 30px;
+    padding: 1% 0%;
+    box-shadow: inset 0 0 4vw #254B62, 0 0 1vw #1D3E53;
+    color: white;
+    transition: all 1s;
+}
+
+.carusel-buttons {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    width: 85vw;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.carts {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    animation-name: changer;
+    animation-duration: 0.5s;
+    border-radius: 30px;
+    padding: 5% 2%;
+    box-shadow: inset 0 0 5vw #254B62, 0 0 1vw black;
+    width: max-content;
+    font-family: monospace;
+    gap: 15px;
+    font-size: 2.5rem;
+    text-decoration: none;
+    color: white;
+    transition: all 0.5s;
+    text-shadow: 0 0 10px black;
+    outline: none;
+    border: none;
+}
+
+.carts:nth-child(1) {
+    background-image: url(../images/blizzard.png);
+    background-size: 100% 100%;
+}
+
+.carts:nth-child(2) {
+    background-image: url(../images/samsung.png);
+    background-size: 100% 100%;
+
+}
+
+.carts:hover {
+    transform: translateY(-15%);
+}
+
+/* .carts .mainimg{
+    width: 300px;
+    border-radius: 30px;
+} */
+.workcarusel {
+    display: none;
+    position: fixed;
+    max-height: 80vh;
+    max-width: 80vw;
+    top: 4%;
+}
+
+.innerworkcarusel {
+    display: flex;
+    flex-direction: column;
+    gap: 4vh;
+    position: relative;
+    transition: all 0.5s;
+    top: 0;
+}
+
+.works {
+    display: none;
+    animation-name: changer;
+    animation-duration: 0.5s;
+}
+
+.works::after {
+    content: " ";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #000000ed;
+}
+
+.activ-flex {
+    display: flex !important;
+}
+
+.worksbox {
+    display: flex;
+    width: 50vw;
+    height: 80vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: white;
+    gap: 4vh;
+    text-shadow: 0 0 20px #ffffffa8;
+    position: relative;
+    z-index: +1;
+    box-shadow: inset 0 0 4vw #254B62;
+    border-radius: 50px;
+}
+
+.worksbox * {
+    animation-name: changer1;
+    animation-duration: 1s;
+}
+
+.worksbox>img {
+    width: 45%;
+    height: 22%;
+    border-radius: 40px;
+    box-shadow: 0 0 3vw #254B62;
+}
+
+.works-type {
+    display: flex;
+    gap: 3vw;
+    transition: all 0.5s;
+}
+
+.works-type img {
+    transition: all 0.5s;
+    height: 30px;
+    filter: drop-shadow(0px 0px 3px #4488b3);
+
+}
+
+.worksbox:hover .works-type {
+    transform: scale(2);
+    gap: 1vw;
+}
+.indicators-work{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    left: 105%;
+    display: flex;
+    flex-direction: column;
+    gap: 1vh;
+    top: 45%;
+}
+.indicators-work li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2vw;
+}
+.next ,.previous ,.back-to-works {
+    position: absolute;
+    padding: 1% 5%;
+
+    color: #ffffff8a;
+    display: flex;
+    justify-content: center;
+    width: max-content;
+    height: auto;
+    background-color: #476d7c4d;
+    outline: none;
+    border: none;
+    box-shadow: 0 0 1vw #254B62;
+    font-size: 1rem;
+    border-radius: 30px;
+    transition: all 0.5s;
+    animation-name: changer;
+    animation-duration: 0.5s;
+}
+.next{
+    left: 105%;
+    top: 10vh;
+}
+.previous{
+    left: 105%;
+    bottom: 10vh;
+}
+.back-to-works{
+    right: 105%;
+    top: 45%;
+}
+.circelindicators {
+    width: 3vw;
+    height: 3vw;
+    background-color: #254b62bd;
+    box-shadow: inset 0 0 1px #254B62, 0 0 1vw #1D3E53;
+    border-radius: 50%;
+    transition: all 0.5s;
+}
+.title{
+    display: none;
+    animation-name: changer;
+    animation-duration: 0.5s;
+}
+.indicators-work li:hover .title{
+    display: block;
+}
+.indicators-work li:hover .circelindicators{
+    box-shadow: inset 0 0 4vw #5284a3, 0 0 1vw #1D3E53;
+}
+@media screen and (max-width:768px) {
+    .firstopenner{
+        padding: 4vw;
+        gap: 3vw;
+    }
+    .carts {
+        font-size: 1rem;
+    }
+
+    .backworks {
+        padding: 5% 0%;
+    }
+    .firstopenner button{
+        font-size: 1rem;
+    }
+    .worksbox{
+        font-size: 0.7rem;
+        /* height: 100vw; */
+    }
+    .works-type img{
+        height: 2vw;
+    }
+    /* .workcarusel{
+        top: 55vw;
+    } */
+    .circelindicators{
+        width: 5vw;
+        height: 5vw;
+    }
+}
